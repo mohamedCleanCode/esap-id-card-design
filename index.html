@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ID Card</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        width: 100px;
+      }
+      section {
+        margin: 20px auto;
+        text-align: center;
+        width: 300px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Front Card -->
+    <section class="front-card">
+      <div>
+        <img src="./empowering-energy-logo.jpeg" alt="empowering-energy-logo" />
+      </div>
+      <div>
+        <img src="./user-photo.jpg" alt="user-photo" />
+      </div>
+      <div style="margin: 10px 0">
+        <p style="font-weight: bold">Syed Imam</p>
+        <p>Software Engineer</p>
+      </div>
+      <p>ID: 111</p>
+      <div>
+        <img
+          src="data:image/gif;base64,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"
+          alt="barcode-image"
+        />
+      </div>
+      <p>
+        <a
+          href="www.empoweringeng.com"
+          style="color: black; text-decoration: none; font-weight: bold"
+          >www.empoweringeng.com</a
+        >
+      </p>
+      <div>
+        <img src="./bg-footer.jpg" alt="bg-footer-image" style="width: 100%" />
+      </div>
+    </section>
+    <hr />
+    <!-- Back Card -->
+    <section class="back-card">
+      <div>
+        <img src="./empowering-energy-logo.jpeg" alt="empowering-energy-logo" />
+      </div>
+      <div>
+        <img src="./bg-header.jpg" alt="bg-header-image" style="width: 100%" />
+      </div>
+      <div>
+        <p>
+          If found please return to
+          <br />
+          <span style="display: inline-block; font-weight: bold; margin: 10px"
+            >Empowering Energy Office</span
+          >
+          <br />
+          7404, King Abdul Aziz Road 4340, Riyadh 12282 Kingdom of Saudi Arabia
+        </p>
+      </div>
+      <p style="font-weight: bold; margin: 10px 0">Valid Thru: 12/2025</p>
+      <div><img src="./QRlogo.png" alt="qr-code-image" /></div>
+      <p>
+        <a
+          href="www.empoweringeng.com"
+          style="color: black; text-decoration: none; font-weight: bold"
+          >www.empoweringeng.com</a
+        >
+      </p>
+      <div>
+        <img src="./bg-footer.jpg" alt="bg-footer-image" style="width: 100%" />
+      </div>
+    </section>
+  </body>
+</html>
